@@ -16,19 +16,6 @@ A tiny browser game built with plain HTML, CSS, and JavaScript. The goal is to c
 - `styles.css` — all visual design and responsive styling
 - `app.js` — game logic, timing, scoring, and click handling
 
-## Local run instructions
-
-You can either:
-
-- double-click `index.html` in a file explorer, or
-- run a simple local server from this folder:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000` in your browser.
-
 ## Notes
 
 This is a fully static web app, so there is no backend or package installation required. It is playable immediately in any browser that supports standard HTML5 and JavaScript.
