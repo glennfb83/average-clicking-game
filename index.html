@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Average Clicking Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Mini web game</p>
+          <h1>Average Clicking Game</h1>
+        </div>
+      </header>
 
+      <section class="hud" aria-label="Game statistics">
+        <div class="stat-box">
+          <span class="label">Time</span>
+          <strong id="timeValue">15.0s</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Clicks</span>
+          <strong id="clickValue">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Average</span>
+          <strong id="avgValue">0.00</strong>
+        </div>
+      </section>
+
+      <section class="target-panel">
+        <div>
+          <span class="label">Target average</span>
+          <h2 id="targetValue">6.00 clicks/sec</h2>
+        </div>
+        <div class="meter" aria-label="Accuracy meter">
+          <div id="meterFill" class="meter-fill"></div>
+        </div>
+      </section>
+
+      <button id="clickButton" class="click-button" type="button" aria-label="Click the button">
+        CLICK!
+      </button>
+
+      <div class="controls">
+        <button id="startButton" class="primary" type="button">Start round</button>
+        <button id="resetButton" class="secondary" type="button">Reset</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">Press start to begin your round.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
